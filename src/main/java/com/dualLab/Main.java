@@ -113,6 +113,7 @@ public class Main {
                             list.get(j).getArrivalTimeInMinutes() - getTravelTime(list.get(j).getDepartureTimeInMinutes(), list.get(j).getArrivalTimeInMinutes())) {
                         list.remove(j);
                         j--;
+                        if (j < 0) j = 0;
                     }
                 }
             }
