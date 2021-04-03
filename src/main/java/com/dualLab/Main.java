@@ -100,6 +100,7 @@ public class Main {
 
         for (int i = 0; i < list.size(); i++) {
             for (int j = 0; j < list.size(); j++) {
+                if (i == j) continue;
                 if (list.get(i).getArrivalTimeInMinutes() > list.get(j).getArrivalTimeInMinutes()) {
                     if (list.get(i).getArrivalTimeInMinutes() - getTravelTime(list.get(i).getDepartureTimeInMinutes(), list.get(i).getArrivalTimeInMinutes()) <
                             list.get(j).getArrivalTimeInMinutes() - getTravelTime(list.get(j).getDepartureTimeInMinutes(), list.get(j).getArrivalTimeInMinutes())) {
