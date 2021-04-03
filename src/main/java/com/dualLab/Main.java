@@ -89,7 +89,7 @@ public class Main {
         }
         for (int i = 0; i < list.size() - 1; i++) {
             if (list.get(i).getDepartureTimeInMinutes() == list.get(i + 1).getDepartureTimeInMinutes()) {
-                if (list.get(i).getArrivalTimeInMinutes() < list.get(i + 1).getArrivalTimeInMinutes()) {
+                if (list.get(i).getArrivalTimeInMinutes() > list.get(i + 1).getArrivalTimeInMinutes()) {
                     list.remove(i);
                     i--;
                 } else {
