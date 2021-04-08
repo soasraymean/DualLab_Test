@@ -1,2 +1,2 @@
 # DualLab_Test
-pom.xml - конфигурационный файл для сбора jar через Maven Shade Plugin
+pom.xml file is needed to create jar-file through Maven Shade Plugin
